@@ -1,0 +1,72 @@
+.project__title {
+    @include headerStyle($color-dark-4, $fs-7, $fw-3);
+    h2 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+}
+// .card {
+//     .form_over {
+.project__content {
+    .nav {
+        align-items: center;
+        form {
+            padding-top: 5px;
+            button {
+                @include button($pd-8, $pd-1, $radius-1);
+                background: linear-gradient(90deg, $color-white-3 0%, $color-white-2 100%);
+                font-size: 20px;
+            }
+        }
+    }
+}
+.card {
+    .form_over {
+        min-height: 500px;
+        max-height: 500px;
+        background-color: rgba(255, 255, 255, 0.556);
+        border: none;
+    }
+    min-height: 500px;
+    img {
+        padding: 20px;
+    }
+    .card-body {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        gap: 20px;
+        align-items: center;
+        padding: 20px;
+        h4 {
+            text-align: end;
+        }
+        button {
+            @include button($pd-8, $pd-8, $radius-1);
+            background: linear-gradient(90deg, $color-white-3 0%, $color-white-2 100%);
+            font-size: 15px;
+            width: 80%;
+            font-weight: 400;
+            &:hover {
+                background: $color-white-3;
+            }
+        }
+        .card_name {
+            font-weight: 400;
+            font-size: $fs-2;
+            color: $color-dark-2;
+            text-decoration: none;
+        }
+        .card_price {
+            font-weight: bold;
+            color: $color-dark-2;
+        }
+        .card__hang {
+            color: $color-blue-4;
+        }
+    }
+}
+.hidenasp {
+    &:hover {
+        text-decoration: none;
+    }
+}

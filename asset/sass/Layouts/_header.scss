@@ -1,0 +1,43 @@
+header {
+    .navbar-toggler {
+        @include button($pd-2, $pd-2, $radius-1);
+        background: linear-gradient(90deg, $color-white-3 0%, $color-white-2 100%);
+    }
+
+    box-shadow: 0 2px 4px #916db349;
+    .navbar-brand {
+        @include headerStyle($color-dark-2, $fs-3, $fw-3);
+    }
+
+    .navbar-collapse {
+        .navbar-nav {
+            gap: 30px;
+        }
+        a {
+            @include headerStyle($color-dark-2, $fs-7, $fw-1);
+            transition: all 0.5s;
+            &:hover {
+                @include headerStyle($color-white-2, $fs-7, $fw-1);
+            }
+        }
+    }
+}
+.info-log {
+    align-items: center;
+}
+.name__user {
+    margin: 0;
+    font-size: 20px;
+    color: black;
+}
+.icon__user {
+    font-size: 20px;
+    color: black;
+}
+.dropdown__user {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    display: flex;
+    text-align: center;
+}

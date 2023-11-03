@@ -1,0 +1,156 @@
+.sign {
+    background: linear-gradient(#e66465, #02073d);
+    width: 100%;
+    height: 100%;
+}
+.sign__small {
+    padding: 0px 0 0 15px;
+}
+.sign__text {
+    width: 50%;
+    padding: 0px 20px 0px 20px;
+}
+.sign__btn:hover {
+    border: 1px solid white;
+}
+.lable__name,
+.lable__SDT {
+    color: white;
+    font-size: 25px;
+}
+.gender {
+    h2 {
+        color: white;
+        font-size: 25px;
+    }
+}
+.gender {
+    ul {
+        display: flex;
+        li {
+            list-style: none;
+            padding-right: 100px;
+            position: relative;
+        }
+    }
+}
+.gender {
+    ul {
+        li {
+            input {
+                position: absolute;
+                visibility: hidden;
+            }
+        }
+    }
+}
+.gender {
+    ul {
+        li {
+            label {
+                display: block;
+                position: relative;
+                font-weight: 300;
+                font-size: 30px;
+                padding: 10px 10px 25px 65px;
+                color: white;
+                height: 30px;
+                z-index: 9999;
+                cursor: pointer;
+                // -webkit-transition: all 0.25s linear;
+            }
+        }
+    }
+}
+.gender {
+    ul {
+        li:hover label {
+            color: white;
+        }
+    }
+}
+.gender {
+    ul {
+        li {
+            .check {
+                display: block;
+                position: absolute;
+                border: 5px solid;
+                border-radius: 100%;
+                height: 35px;
+                width: 35px;
+                top: 15px;
+                left: 20px;
+                z-index: 99;
+                transition: border 0.25s linear;
+                -webkit-transition: border 0.25s linear;
+            }
+        }
+    }
+}
+.gender {
+    ul {
+        li:hover.check {
+            border: 5px solid white;
+        }
+    }
+}
+.gender {
+    ul {
+        li .check::before {
+            display: block;
+            position: absolute;
+            content: "";
+            border-radius: 100%;
+            height: 15px;
+            width: 15px;
+            top: 5px;
+            left: 5px;
+            margin: auto;
+        }
+    }
+}
+.spanTB {
+    font-size: 20px;
+}
+input[type="radio"]:checked ~ .check {
+    border: 5px solid white;
+}
+input[type="radio"]:checked ~ .check::before {
+    background: white;
+}
+
+input[type="radio"]:checked ~ label {
+    color: white;
+}
+.sign__img {
+    width: 50%;
+}
+.sign__img {
+    img {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sign__img {
+        img {
+            height: 100%;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .sign__img {
+        display: none;
+    }
+    .sign__text {
+        width: 100%;
+    }
+    .gender {
+        ul {
+            justify-content: center;
+        }
+    }
+}

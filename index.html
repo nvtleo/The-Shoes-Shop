@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LACES</title>
+
+    <!-- thư viện -->
+    <!-- FONT GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- FONT ASOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="./asset/sass/css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg container">
+
+            <a class="navbar-brand" href="#"><img src="./asset/img/logo1.png" alt="#"> LACES</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto info-log">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="loginButton" class="nav-link" href="./view/dangnhap.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="signButton" class="nav-link" href="./view/dangki.html">Register</a>
+                    </li>
+                    <div id="btnLog" class="dropdown logedBTN">
+
+                        <button class="btn btn-secondary dropdown-toggle dropdown__user" type="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            <p class="name__user" id="user"></p>
+                        </button>
+                        <div class="dropdown-menu">
+                            <button id="logout" type="submit" class="dropdown-item logout__text">Đăng xuất</button>
+                        </div>
+                    </div>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="carousel">
+        <div class="container">
+            <div class="text">
+                <h1 class="txt__info">WINTER COLECCTION 2023</h1>
+                <button>More</button>
+            </div>
+            <div class="img">
+
+            </div>
+
+        </div>
+    </section>
+    <section class="product"></section>
+
+    <section class="item">
+        <div class="container">
+            <section class="project py-5">
+                <div class="container">
+                    <div class="project__title text-center">
+                        <h2>NEW ARRIVALS</h2>
+
+                    </div>
+                    <div class="project__content">
+                        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#all"
+                                    type="button" role="tab" aria-controls="home" aria-selected="true">Snaeker</button>
+                            </li>
+
+                            <form method="post">
+                                <label for="lang-select">filtration products</label>
+                                <select name="lang" id="lang-select">
+                                    <option value="">ALL</option>
+                                    <option value="Adidas">Adidas</option>
+                                    <option value="Nike">Nike</option>
+                                    <option value="Converse">Converse</option>
+                                    <option value="Van">Vans</option>
+                                </select>
+                                <button id="loc" type="button">filtration</button>
+                            </form>
+                        </ul>
+
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="home-tab">
+                                <!-- row: display flex -->
+                                <div id="allsp" class="row">
+                                    <!--
+                            lớn hơn 1200: 3 cột
+                            lớn hơn 992: 3 c
+                            lớn hơn 768: 2 cột
+                            lớn hơn 576: 2 cột
+                            nhỏ hơn 576: 1 cột
+                            -->
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="Illustrations" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="row">
+
+                                </div>
+                                <div class="tab-pane fade" id="photo" role="tabpanel" aria-labelledby="contact-tab">
+                                    <div class="row">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="basket">
+
+        <div class="item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+        </div>
+
+    </section> -->
+            <!-- <a href="./view/dangki.html"></a> -->
+            <section class="basket">
+                <button type="button" class="" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fa-regular fa-clipboard">
+                        <p class="sanpham__giohang"></p>
+                    </i>
+
+                </button>
+            </section>
+            <section class="popup">
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">ALL PRODUCT</h5>
+
+                            </div>
+                            <div class="modal-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>IMG</th>
+                                            <th>NAME</th>
+                                            <th>PRICE</th>
+                                            <th>QUANTILY</th>
+                                            <th>TOTAL</th>
+                                            <th>ACTION</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbodySanPham">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn close" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn pay">PAY</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="popup-chitietsp">
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div id="popup-ctsp" class="modal-content">
+
+                            <!-- <div class="container">
+                        <div class="form__popupsp">
+                            <div class="img__sp">
+                                <img src="./asset/img/image 5.png" alt="">
+                            </div>
+                            <div class="thongtin__sp">
+                                <h1>aaaa</h1>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore distinctio aperiam
+                                    corporis a ipsum voluptatibus harum assumenda quibusdam tenetur ab? Commodi iste
+                                    molestiae nam iure, sit voluptas alias ad illum!</p>
+                                <h3>SIZE</h3>
+                                <div>form size</div>
+                                <h3>$ 250</h3>
+                                <span class=verd13>
+                                    <button class="chitetsp__bt__updown" onclick="HmFunction()"><b>-</b></button>
+                                </span>
+                                <input type="number" id="HNumber" class="verd15" value="0">
+                                <span class=verd13>
+                                    <button class="chitetsp__bt__updown" onclick="HaFunction()"><b>+</b></button>
+                                </span>
+                                <button class="chitetsp__bt">add to cart</button>
+                            </div>
+                        </div>
+
+                    </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+            </footer>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+                crossorigin="anonymous"></script>
+
+            <!-- thư viện AXIOS -->
+            <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+            <script src="./controller/SanPham.js"></script>
+            <script src="./controller/DanhSachSanPham.js"></script>
+            <script src="./controller/main.js"></script>
+
+</body>
+
+</html>

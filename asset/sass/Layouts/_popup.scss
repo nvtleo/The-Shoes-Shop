@@ -1,0 +1,77 @@
+.popup-chitietsp{
+    .form__popupsp{
+        .img__sp{
+            img{
+                width: 100%;
+            }
+        }
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        gap: 50px;
+        padding: 50px 0;
+        .thongtin__sp{
+            max-width: 80%;
+            line-height: 2;
+            .price-red{
+                padding-top: 10px;
+                color: red;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .verd15{
+                padding: 5px;
+                border-radius: 5px;
+                max-width: 50px;
+            }
+            .chitetsp__bt__updown{
+                @include button($pd-8,$pd-2,$radius-1);
+                background: linear-gradient(90deg, $color-white-3 0%, $color-white-2 100%);
+                transition: all 0.5s;
+                &:hover{
+                    background: $color-white-2;
+                
+                }
+            }
+            .chitetsp__bt{
+                margin-top: 20px;
+                @include button($pd-6,$pd-7,$radius-1);
+                background: linear-gradient(90deg, $color-white-3 0%, $color-white-2 100%);
+                font-size: 20px;
+                transition: all 0.5s;
+                &:hover{
+                    background: $color-white-2;
+                
+                }
+            }
+            .bt--size{
+                @include button($pd-8,$pd-8,$radius-1);
+                background: linear-gradient(90deg, $color-white-3 0%, $color-white-2 100%);
+                transition: all 0.5s;
+                &:hover{
+                    background: $color-white-2;
+                
+                }
+            }
+        }
+    }
+}
+.popup-cart{
+    .chitetsp__bt__updown{
+        @include button($pd-8,$pd-2,$radius-1);
+        background: linear-gradient(90deg, $color-white-3 0%, $color-white-2 100%);
+    }
+    .verd15{
+        padding: 5px;
+        border-radius: 5px;
+        max-width: 50px;
+    }
+}
+// .all{
+//     .allsp{
+//         .addCart{
+//             @include button($pd-8,$pd-2,$radius-1);
+//             background: linear-gradient(90deg, $color-white-3 0%, $color-white-2 100%);
+//         }
+//     }
+// }

@@ -1,0 +1,73 @@
+//chỉnh responsive chung cả web
+@media only screen and (min-width: 300px) {
+    .carousel .container .text h1 {
+        font-size: 35px;
+        // color: $color-blue-4;
+    }
+    .popup-chitietsp .form__popupsp .thongtin__sp .chitetsp__bt {
+        padding: 5px 5px;
+    }
+    .thongtin__sp{
+        h2{
+            font-size: 1.5rem;
+        }
+        .bt--size{
+            padding: 2px 2px;
+        }
+        p{
+            display: none;
+        }
+        .chitetsp__bt__updown{
+            padding: 2px 2px;
+        }
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .carousel .container .text h1 {
+        font-size: 40px;
+        // color: $color-blue-4;
+    }
+    .popup-chitietsp .form__popupsp .thongtin__sp .chitetsp__bt {
+        padding: 10px 20px;
+    }
+
+}   
+
+@media only screen and (min-width: 768px) {
+    .carousel .container .text h1 {
+        font-size: 50px;
+        // color: $color-blue-4;
+        // color: blue;
+    }
+    .thongtin__sp{
+        h2{
+            font-size:2rem;
+        }
+        .bt--size{
+            padding: 5px 5px;
+        }
+        p{
+            display: block;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .carousel .container .text h1 {
+        font-size: 60px;
+        // color: red;
+    }
+    .popup-chitietsp .form__popupsp .thongtin__sp .chitetsp__bt {
+        padding: 15px 60px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .carousel .container .text h1 {
+        font-size: 70px;
+        // color: yellow;
+    }
+
+}

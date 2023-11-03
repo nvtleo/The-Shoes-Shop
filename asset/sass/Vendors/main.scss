@@ -1,0 +1,30 @@
+//Vendor (import file scss, riêng file css gắn ở html)
+
+
+//Helper
+@import "../Helper/mixin";
+@import "../Helper/variable";
+
+//Base
+@import "../Base/reset";//reset from size của công cụ hỡ trợ để code theo cách của bạn
+@import "../Base/customize";
+
+
+//components  : button
+@import "../Components/button";
+
+//layouts
+@import "../Layouts/header";
+@import "../Layouts/carousel";
+@import "../Layouts/basket";
+@import "../Layouts/item";
+@import "../Layouts/popup";
+
+
+//Pages
+@import "../Pages/dangki";
+@import "../Pages/dangnhap";
+//Theme.
+
+// code repon dùng chung
+@import "../Base/responsive";

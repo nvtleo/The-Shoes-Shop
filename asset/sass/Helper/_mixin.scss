@@ -1,0 +1,16 @@
+// + thành phần nhỏ
+// + xuất hiện nhiều chỗ
+// + có chung các thuộc tính css giống nhau
+// + khác nhau về giá trị
+
+@mixin headerStyle($color,$fs,$fw){
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin button($pd-y,$pd-x,$radius){
+    padding: $pd-y $pd-x;
+    border: none;
+    border-radius: $radius;
+}

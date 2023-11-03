@@ -1,0 +1,26 @@
+.carousel{
+    padding-top: 50px;  
+    
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        align-items: center;
+
+        background-image: url(../../img/crs.png);
+        background-position: center 30%;
+        background-size: cover;
+        // height: 600px;
+
+        .img{
+        }
+        .text{
+            @include headerStyle($color-dark-4,$fs-7,$fw-3);
+            text-align: left;
+            margin: 100px;
+            h1{
+                font-size: 70px;
+                font-weight: bolder;
+            }
+        }
+    }
+}

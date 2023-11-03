@@ -1,0 +1,50 @@
+// .basket{
+//     position: fixed;
+//     bottom: 50%;
+//     right: 0%;
+//     z-index: 10;
+//     .item{
+//         a{
+//             color: $color-dark-2;
+//             font-size: 25px;
+//             background: linear-gradient(90deg, $color-white-3 0%, $color-white-2 100%);
+//             border-radius: $radius-1;
+//         }
+//     }
+//     .modal-backdrop{
+//         position: fixed;
+//     }
+// }
+.basket{
+    position: fixed;
+        right: 2%;
+        bottom: 4%;
+    button{
+        border: none;
+        @include button($pd-6,$pd-6,$radius-1);
+        background: linear-gradient(90deg, $color-white-3 0%, $color-white-2 100%);
+        i{
+            color: $color-dark-2;
+            font-size: 25px;
+            position: relative;
+            p{
+                position: absolute;
+                background-color: red;
+                padding: 5px 8px;
+                color: $color-dark-2;
+                font-size: 15px;
+                border-radius: 50%;
+                top: -20px;
+                right: -20px;
+            }
+        }
+    }
+}
+.modal-dialog{
+    max-width: 1000px;
+    .modal-title{
+        @include headerStyle($color-dark-4,$fs-7,$fw-3);
+        font-size: 50px;
+        font-weight: bold;
+    }
+}
